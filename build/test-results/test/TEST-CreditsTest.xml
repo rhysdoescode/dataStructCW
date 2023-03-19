@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CreditsTest" tests="33" skipped="0" failures="18" errors="0" timestamp="2023-03-19T16:27:09" hostname="LAPTOP-BPGBSKDT" time="0.095">
+<testsuite name="CreditsTest" tests="33" skipped="0" failures="18" errors="0" timestamp="2023-03-19T16:50:42" hostname="LAPTOP-BPGBSKDT" time="0.098">
   <properties/>
-  <testcase name="testFindCastNeg()" classname="CreditsTest" time="0.024"/>
-  <testcase name="testFindCastPos()" classname="CreditsTest" time="0.009">
+  <testcase name="testFindCastNeg()" classname="CreditsTest" time="0.026"/>
+  <testcase name="testFindCastPos()" classname="CreditsTest" time="0.007">
     <failure message="org.opentest4j.AssertionFailedError: The results are not correct. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The results are not correct. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -103,7 +103,7 @@
 </failure>
   </testcase>
   <testcase name="testFindCrewNeg()" classname="CreditsTest" time="0.001"/>
-  <testcase name="testFindCrewPos()" classname="CreditsTest" time="0.002">
+  <testcase name="testFindCrewPos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: The results are not correct. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The results are not correct. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -203,7 +203,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testFindStarCastIDNeg()" classname="CreditsTest" time="0.001"/>
+  <testcase name="testFindStarCastIDNeg()" classname="CreditsTest" time="0.002"/>
   <testcase name="testFindStarCastIDPos()" classname="CreditsTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
@@ -305,7 +305,7 @@
 </failure>
   </testcase>
   <testcase name="testFindSuperStarCastIDNeg()" classname="CreditsTest" time="0.003"/>
-  <testcase name="testFindSuperStarCastIDPos()" classname="CreditsTest" time="0.001">
+  <testcase name="testFindSuperStarCastIDPos()" classname="CreditsTest" time="0.006">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -405,8 +405,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetCastNameNeg()" classname="CreditsTest" time="0.002"/>
-  <testcase name="testGetCastNamePos()" classname="CreditsTest" time="0.002">
+  <testcase name="testGetCastNameNeg()" classname="CreditsTest" time="0.003"/>
+  <testcase name="testGetCastNamePos()" classname="CreditsTest" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Tom Hanks&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Tom Hanks&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -505,8 +505,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetCastNeg()" classname="CreditsTest" time="0.002">
-    <failure message="org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Cast;@71d04584&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Cast;@71d04584&gt;
+  <testcase name="testGetCastNeg()" classname="CreditsTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Cast;@42a1c7c&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Cast;@42a1c7c&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:48)
 	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:37)
@@ -705,7 +705,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCrewNameNeg()" classname="CreditsTest" time="0.001"/>
-  <testcase name="testGetCrewNamePos()" classname="CreditsTest" time="0.002">
+  <testcase name="testGetCrewNamePos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;John Lasseter&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;John Lasseter&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -805,7 +805,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCrewNeg()" classname="CreditsTest" time="0.002">
-    <failure message="org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Crew;@7038788b&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Crew;@7038788b&gt;
+    <failure message="org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Crew;@1c35b0a8&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Should return null for a not existent ID. ==&gt; expected: &lt;null&gt; but was: &lt;[Lstores.Crew;@1c35b0a8&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:48)
 	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:37)
@@ -1003,7 +1003,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetFilmIDsFromCastIDNeg()" classname="CreditsTest" time="0.0"/>
+  <testcase name="testGetFilmIDsFromCastIDNeg()" classname="CreditsTest" time="0.001"/>
   <testcase name="testGetFilmIDsFromCastIDPos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
@@ -1105,7 +1105,7 @@
 </failure>
   </testcase>
   <testcase name="testGetFilmIDsFromCrewIDNeg()" classname="CreditsTest" time="0.001"/>
-  <testcase name="testGetFilmIDsFromCrewIDPos()" classname="CreditsTest" time="0.002">
+  <testcase name="testGetFilmIDsFromCrewIDPos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -1306,8 +1306,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUniqueCastIDsNeg()" classname="CreditsTest" time="0.0"/>
-  <testcase name="testGetUniqueCastIDsPos()" classname="CreditsTest" time="0.0">
+  <testcase name="testGetUniqueCastIDsNeg()" classname="CreditsTest" time="0.001"/>
+  <testcase name="testGetUniqueCastIDsPos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -1407,8 +1407,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUniqueCrewIDsNeg()" classname="CreditsTest" time="0.0"/>
-  <testcase name="testGetUniqueCrewIDsPos()" classname="CreditsTest" time="0.0">
+  <testcase name="testGetUniqueCrewIDsNeg()" classname="CreditsTest" time="0.001"/>
+  <testcase name="testGetUniqueCrewIDsPos()" classname="CreditsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -1508,8 +1508,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testRemoveNeg()" classname="CreditsTest" time="0.001"/>
-  <testcase name="testRemovePos()" classname="CreditsTest" time="0.001">
+  <testcase name="testRemoveNeg()" classname="CreditsTest" time="0.002"/>
+  <testcase name="testRemovePos()" classname="CreditsTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Removed credit not returning true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Removed credit not returning true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)

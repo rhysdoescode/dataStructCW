@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RatingsTest" tests="19" skipped="0" failures="10" errors="0" timestamp="2023-03-19T16:27:09" hostname="LAPTOP-BPGBSKDT" time="0.043">
+<testsuite name="RatingsTest" tests="19" skipped="0" failures="10" errors="0" timestamp="2023-03-19T16:50:42" hostname="LAPTOP-BPGBSKDT" time="0.032">
   <properties/>
   <testcase name="testGetMovieRatingsBetweenNeg()" classname="RatingsTest" time="0.001"/>
-  <testcase name="testGetMovieRatingsBetweenPos()" classname="RatingsTest" time="0.002">
+  <testcase name="testGetMovieRatingsBetweenPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -403,7 +403,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetRatingsBetweenNeg()" classname="RatingsTest" time="0.0"/>
+  <testcase name="testGetRatingsBetweenNeg()" classname="RatingsTest" time="0.001"/>
   <testcase name="testGetRatingsBetweenPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
@@ -504,8 +504,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserRatingsNeg()" classname="RatingsTest" time="0.0"/>
-  <testcase name="testGetUserRatingsPos()" classname="RatingsTest" time="0.002">
+  <testcase name="testGetUserRatingsNeg()" classname="RatingsTest" time="0.001"/>
+  <testcase name="testGetUserRatingsPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Not returning correct ratings for user. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Not returning correct ratings for user. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -804,7 +804,7 @@
 </failure>
   </testcase>
   <testcase name="testGetUserRatingsBetweenNeg()" classname="RatingsTest" time="0.001"/>
-  <testcase name="testGetUserRatingsBetweenPos()" classname="RatingsTest" time="0.007">
+  <testcase name="testGetUserRatingsBetweenPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -905,7 +905,7 @@
 </failure>
   </testcase>
   <testcase name="testGetMovieRatingsNeg()" classname="RatingsTest" time="0.001"/>
-  <testcase name="testGetMovieRatingsPos()" classname="RatingsTest" time="0.002">
+  <testcase name="testGetMovieRatingsPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Not returning correct ratings for movie. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Not returning correct ratings for movie. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)

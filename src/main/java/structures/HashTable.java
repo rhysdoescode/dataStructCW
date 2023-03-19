@@ -11,11 +11,13 @@ import javax.xml.crypto.dsig.keyinfo.KeyValue;
 public class HashTable {
     private LinkedList<SimpleMap>[] table;
      
-    private int size;
+    private int bucketsFilled;
     private int capacity;
+    private int size;
 
 
     public HashTable(){
+        this.bucketsFilled = 0;
         this.size = 0;
         this.capacity = 2;
         table = (LinkedList<SimpleMap>[]) new LinkedList[this.capacity];
@@ -30,7 +32,7 @@ public class HashTable {
     public void add(SimpleMap attributeList) {
         int hashCode = hash((Integer) attributeList.getPropertyByKey("id"));
         //System.out.println("Hash code: "+ hashCode);
-        if (size > capacity * 0.7){
+        if (bucketsFilled > capacity * 0.7){
             growHashTable();
         }
 
@@ -39,7 +41,7 @@ public class HashTable {
         if (tableRow == null) {
             LinkedListElement<SimpleMap> newHead = new LinkedListElement<>(attributeList);
             table[hashCode] = new LinkedList<SimpleMap>(newHead);
-            size++;
+            bucketsFilled++;
         }
         else {
             LinkedListElement<SimpleMap> newHead = new LinkedListElement<>(attributeList);
@@ -47,7 +49,7 @@ public class HashTable {
             table[hashCode].setHead(newHead);
         }
 
-        
+        size++;
     }
 
     /**
@@ -58,10 +60,11 @@ public class HashTable {
     public void growHashTable(){
         boolean nextPrimeFound = false;
         int oldCapacity = capacity;
-        capacity = capacity * 2;
+        capacity = (capacity * 2) - 1;
         // Get next biggest prime number
         while (!nextPrimeFound){
             nextPrimeFound = true;
+            capacity++;
            
             for (int i = 2; i < capacity; i++){
                 if(capacity % i == 0){
@@ -69,8 +72,6 @@ public class HashTable {
                     break;
                 }
             }   
-
-            capacity++;
         }
         
         // Make new array have the capacity of the next biggest prime number
@@ -78,6 +79,7 @@ public class HashTable {
         table = (LinkedList<SimpleMap>[]) new LinkedList[capacity];
 
         // Copy contents of old array into the new one
+        bucketsFilled = 0;
         size = 0;
         for (int i = 0; i < oldCapacity; i++){
             if (oldTable[i] != null){
@@ -96,7 +98,7 @@ public class HashTable {
      * @return the hashed value
      */
     public int hash(int value){
-        return (value % (capacity));
+        return value % capacity;
     }
 
     public Object getPropertyByID(int id, String propertyTitle){
@@ -128,6 +130,15 @@ public class HashTable {
             
         }
     
+    }
+
+    /**
+     * Getter that returns how many maps are in
+     * the hash map
+     * @return the amount of maps stored in the hash map
+     */
+    public int getSize(){
+        return size;
     }
 
 }

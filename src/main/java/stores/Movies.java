@@ -145,8 +145,8 @@ public class Movies implements IMovies {
      */
     @Override
     public String getOriginalTitle(int id) {
-        // TODO Build this function
-        return null;
+        
+        return (String) hashTable.getPropertyByID(id, "originalTitle");
     }
 
     /**
@@ -158,8 +158,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getOverview(int id) {
-        // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "overview");
     }
 
     /**
@@ -172,7 +171,7 @@ public class Movies implements IMovies {
     @Override
     public String getTagline(int id) {
         // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "tagline");
     }
 
     /**
@@ -184,8 +183,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getStatus(int id) {
-        // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "status");
     }
 
     /**
@@ -263,8 +261,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getOriginalLanguage(int id) {
-        // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "originalLanguage");
     }
 
     /**
@@ -289,8 +286,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getHomepage(int id) {
-        // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "homepage");
     }
 
     /**
@@ -330,8 +326,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getPoster(int id) {
-        // TODO Build this function
-        return null;
+        return (String) hashTable.getPropertyByID(id, "poster");
     }
 
     /**
@@ -564,7 +559,7 @@ public class Movies implements IMovies {
      */
     @Override
     public int size() {
-        return 0;
+        return hashTable.getSize();
     }
 
     /**
