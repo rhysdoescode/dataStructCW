@@ -1,10 +1,10 @@
 package structures;
 
-public class KeyValuePair<V> {
-    private String key;
+public class KeyValuePair<K, V> {
+    private K key;
     private V value;
     
-    public KeyValuePair(String nKey, V nValue) {
+    public KeyValuePair(K nKey, V nValue) {
         this.key = nKey;
         this.value = nValue;
     }
@@ -13,7 +13,7 @@ public class KeyValuePair<V> {
         return this.value;
     }
 
-    public String getKey() {
+    public K getKey() {
         return this.key;
     }
 

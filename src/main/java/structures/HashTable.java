@@ -54,7 +54,7 @@ public class HashTable {
 
     /**
      * Makes the table bigger, retaining all elements but making its size
-     * the next-smallest possible prime number, while still being bigger
+     * the smallest possible prime number, while still being bigger
      * than the previous size.
      */
     public void growHashTable(){

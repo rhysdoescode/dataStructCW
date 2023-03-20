@@ -9,6 +9,7 @@ import structures.*;
 public class Movies implements IMovies {
 
     private HashTable hashTable;
+    private BinarySearchTree binarySearchTree;
 
     /**
      * The constructor for the Movies data store. This is where you should
@@ -16,6 +17,7 @@ public class Movies implements IMovies {
      */
     public Movies() {
         this.hashTable = new HashTable();
+        this.binarySearchTree = new BinarySearchTree<>();
     }
 
     /**
@@ -50,25 +52,30 @@ public class Movies implements IMovies {
         
         SimpleMap listOfProperties = new SimpleMap(17);
         
-        listOfProperties.add(new KeyValuePair<Integer>("id", id));
-        listOfProperties.add(new KeyValuePair<String>("title", title));
-        listOfProperties.add(new KeyValuePair<String>("originalTitle", originalTitle));
-        listOfProperties.add(new KeyValuePair<String>("overview", overview));
-        listOfProperties.add(new KeyValuePair<String>("tagline", tagline));
-        listOfProperties.add(new KeyValuePair<String>("status", status));
-        listOfProperties.add(new KeyValuePair<Genre[]>("genres", genres));
-        listOfProperties.add(new KeyValuePair<Calendar>("release", release));
-        listOfProperties.add(new KeyValuePair<Long>("budget", budget));
-        listOfProperties.add(new KeyValuePair<Long>("revenue", revenue));
-        listOfProperties.add(new KeyValuePair<String[]>("languages", languages));
-        listOfProperties.add(new KeyValuePair<String>("originalLanguage", originalLanguage));
-        listOfProperties.add(new KeyValuePair<Double>("runtime", runtime));
-        listOfProperties.add(new KeyValuePair<String>("homepage", homepage));
-        listOfProperties.add(new KeyValuePair<Boolean>("adult", adult));
-        listOfProperties.add(new KeyValuePair<Boolean>("video", video));
-        listOfProperties.add(new KeyValuePair<String>("poster", poster));
+        listOfProperties.add(new KeyValuePair<String, Integer>("id", id));
+        listOfProperties.add(new KeyValuePair<String, String>("title", title));
+        listOfProperties.add(new KeyValuePair<String, String>("originalTitle", originalTitle));
+        listOfProperties.add(new KeyValuePair<String, String>("overview", overview));
+        listOfProperties.add(new KeyValuePair<String, String>("tagline", tagline));
+        listOfProperties.add(new KeyValuePair<String, String>("status", status));
+        listOfProperties.add(new KeyValuePair<String, Genre[]>("genres", genres));
+        listOfProperties.add(new KeyValuePair<String, Calendar>("release", release));
+        listOfProperties.add(new KeyValuePair<String, Long>("budget", budget));
+        listOfProperties.add(new KeyValuePair<String, Long>("revenue", revenue));
+        listOfProperties.add(new KeyValuePair<String, String[]>("languages", languages));
+        listOfProperties.add(new KeyValuePair<String, String>("originalLanguage", originalLanguage));
+        listOfProperties.add(new KeyValuePair<String, Double>("runtime", runtime));
+        listOfProperties.add(new KeyValuePair<String, String>("homepage", homepage));
+        listOfProperties.add(new KeyValuePair<String, Boolean>("adult", adult));
+        listOfProperties.add(new KeyValuePair<String, Boolean>("video", video));
+        listOfProperties.add(new KeyValuePair<String, String>("poster", poster));
 
         hashTable.add(listOfProperties);
+
+        KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(release, listOfProperties); 
+        binarySearchTree.add(dateAndProperties);
+
+        binarySearchTree.printNodesInOrder();
 
         //hashTable.printFirstElementsOfEachRowInTable();
 
