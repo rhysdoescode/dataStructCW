@@ -6,11 +6,13 @@ import interfaces.ICredits;
 
 public class Credits implements ICredits {
 
+    private HashTable creditsHashTable;
     /**
      * The constructor for the Credits data store. This is where you should
      * initialise your data structures.
      */
     public Credits() {
+        HashTable creditsHashTable = new HashTable();
 
     }
 
@@ -24,7 +26,13 @@ public class Credits implements ICredits {
      */
     @Override
     public boolean add(Cast[] cast, Crew[] crew, int id) {
-        // TODO Build this function
+        SimpleMap listOfProperties = new SimpleMap(3);
+
+        listOfProperties.add(new KeyValuePair<String, Crew[]>("crew", crew));
+        listOfProperties.add(new KeyValuePair<String, Cast[]>("cast", cast));
+        listOfProperties.add(new KeyValuePair<String, Integer>("id", id));
+
+        creditsHashTable.add(listOfProperties);
         return false;
     }
 

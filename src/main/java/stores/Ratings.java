@@ -7,12 +7,14 @@ import structures.*;
 
 public class Ratings implements IRatings {
 
+    private BinarySearchTree binarySearchTree;
     /**
      * The constructor for the Ratings data store. This is where you should
      * initialise your data structures.
      */
     public Ratings() {
-
+        HashTable hashTable = new HashTable();
+        this.binarySearchTree = new BinarySearchTree<>();
     }
 
     /**
@@ -28,8 +30,20 @@ public class Ratings implements IRatings {
      */
     @Override
     public boolean add(int userID, int movieID, float rating, Calendar timestamp) {
+        try {
+            SimpleMap listOfProperties = new SimpleMap(17);
+            listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
+            listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+            
+            KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
+            binarySearchTree.add(dateAndProperties);
+            return true;
+          }
+          catch(Exception e) {
+            return false;
+          }
+          
         
-        return false;
     }
 
     /**
@@ -77,8 +91,8 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getRatingsBetween(Calendar start, Calendar end) {
-        // TODO Build this function
-        return new float[0];
+        
+        return binarySearchTree.getIntPropertiesInRange(start, end, "id");
     }
 
     /**

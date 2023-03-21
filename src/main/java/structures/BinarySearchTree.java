@@ -6,10 +6,12 @@ import javax.xml.crypto.dsig.keyinfo.KeyValue;
  * Binary Tree that sorts key/value pairs by the key.
  */
 public class BinarySearchTree <K extends Comparable<K>, V>  {
-   BSTNode<K, V> root;
+   BSTNode<K, SimpleMap> root;
+   int size;
 
    public BinarySearchTree(){
       root = null;
+      size = 0;
    }
    
    /**
@@ -25,6 +27,7 @@ public class BinarySearchTree <K extends Comparable<K>, V>  {
       else{
          addIntoSubtree(root, newValue);
       }
+      size++;
    }
 
    /**
@@ -39,7 +42,7 @@ public class BinarySearchTree <K extends Comparable<K>, V>  {
    * @param startOfSubtree The node the new value will be compared to 
     * @param newValue The value of the node to be added to the subtree.
     */
-   private void addIntoSubtree(BSTNode<K, V> startOfSubtree, KeyValuePair<K, V> newValue){
+   private void addIntoSubtree(BSTNode<K, SimpleMap> startOfSubtree, KeyValuePair<K, V> newValue){
       K newKey = newValue.getKey();
       K currentKey = startOfSubtree.getValue().getKey();
 
@@ -68,7 +71,48 @@ public class BinarySearchTree <K extends Comparable<K>, V>  {
       inOrder(root);
    }
 
-   public void inOrder(BSTNode<K, V> node){
+   public int[] getIntPropertiesInRange(K min, K max, String propertyKey){
+      return processGetIntPropertiesInRange((BSTNode<K, SimpleMap>) root, min, max, 0, propertyKey);
+   }
+
+   private int[] processGetIntPropertiesInRange(BSTNode<K, SimpleMap> currentNode, K min, K max, int count, String propertyKey){
+      int[] array = new int[size];
+
+      K currentNodeKey = currentNode.getValue().getKey();
+
+      if (currentNodeKey.compareTo(min) >= 0 && currentNodeKey.compareTo(max) <= 0){
+         array[count] = (int) currentNode.getValue().getValue().getPropertyByKey(propertyKey);
+         count++;
+         return combineIntArrays(processGetIntPropertiesInRange(currentNode.getLeftChild(), min, max, count, propertyKey),
+         processGetIntPropertiesInRange(currentNode.getRightChild(), min, max, count, propertyKey), array);
+      }
+      else if (currentNodeKey.compareTo(min) < 0){
+         return processGetIntPropertiesInRange(currentNode.getRightChild(), min, max, count, propertyKey);
+      }
+      else{
+         return processGetIntPropertiesInRange(currentNode.getRightChild(), min, max, count, propertyKey);
+      }
+   }
+
+   public int[] combineIntArrays(int[] arrayOne, int[] arrayTwo, int[] arrayThree){
+     int newLength = arrayOne.length + arrayTwo.length + arrayThree.length;
+
+     int[] newArray = new int[newLength];
+
+     for (int i = 0; i < arrayOne.length; i++){
+      newArray[i] = arrayOne[i];
+     }
+     for(int j = 0; j < arrayTwo.length; j++){
+      newArray[j + (arrayOne.length)] = arrayTwo[j];
+     }
+     for (int k = 0; k < arrayThree.length; k++){
+      newArray[k + (arrayOne.length + arrayTwo.length)] = arrayThree[k];
+     }
+
+     return newArray;
+   }
+
+   public void inOrder(BSTNode<K, SimpleMap> node){
       if (node != null){
          inOrder(node.getRightChild());
          System.out.println("Node: " + node.getValue().getKey());

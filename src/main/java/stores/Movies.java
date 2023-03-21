@@ -50,36 +50,42 @@ public class Movies implements IMovies {
             Genre[] genres, Calendar release, long budget, long revenue, String[] languages, String originalLanguage,
             double runtime, String homepage, boolean adult, boolean video, String poster) {
         
-        SimpleMap listOfProperties = new SimpleMap(17);
+        try{
+            SimpleMap listOfProperties = new SimpleMap(17);
         
-        listOfProperties.add(new KeyValuePair<String, Integer>("id", id));
-        listOfProperties.add(new KeyValuePair<String, String>("title", title));
-        listOfProperties.add(new KeyValuePair<String, String>("originalTitle", originalTitle));
-        listOfProperties.add(new KeyValuePair<String, String>("overview", overview));
-        listOfProperties.add(new KeyValuePair<String, String>("tagline", tagline));
-        listOfProperties.add(new KeyValuePair<String, String>("status", status));
-        listOfProperties.add(new KeyValuePair<String, Genre[]>("genres", genres));
-        listOfProperties.add(new KeyValuePair<String, Calendar>("release", release));
-        listOfProperties.add(new KeyValuePair<String, Long>("budget", budget));
-        listOfProperties.add(new KeyValuePair<String, Long>("revenue", revenue));
-        listOfProperties.add(new KeyValuePair<String, String[]>("languages", languages));
-        listOfProperties.add(new KeyValuePair<String, String>("originalLanguage", originalLanguage));
-        listOfProperties.add(new KeyValuePair<String, Double>("runtime", runtime));
-        listOfProperties.add(new KeyValuePair<String, String>("homepage", homepage));
-        listOfProperties.add(new KeyValuePair<String, Boolean>("adult", adult));
-        listOfProperties.add(new KeyValuePair<String, Boolean>("video", video));
-        listOfProperties.add(new KeyValuePair<String, String>("poster", poster));
+            listOfProperties.add(new KeyValuePair<String, Integer>("id", id));
+            listOfProperties.add(new KeyValuePair<String, String>("title", title));
+            listOfProperties.add(new KeyValuePair<String, String>("originalTitle", originalTitle));
+            listOfProperties.add(new KeyValuePair<String, String>("overview", overview));
+            listOfProperties.add(new KeyValuePair<String, String>("tagline", tagline));
+            listOfProperties.add(new KeyValuePair<String, String>("status", status));
+            listOfProperties.add(new KeyValuePair<String, Genre[]>("genres", genres));
+            listOfProperties.add(new KeyValuePair<String, Calendar>("release", release));
+            listOfProperties.add(new KeyValuePair<String, Long>("budget", budget));
+            listOfProperties.add(new KeyValuePair<String, Long>("revenue", revenue));
+            listOfProperties.add(new KeyValuePair<String, String[]>("languages", languages));
+            listOfProperties.add(new KeyValuePair<String, String>("originalLanguage", originalLanguage));
+            listOfProperties.add(new KeyValuePair<String, Double>("runtime", runtime));
+            listOfProperties.add(new KeyValuePair<String, String>("homepage", homepage));
+            listOfProperties.add(new KeyValuePair<String, Boolean>("adult", adult));
+            listOfProperties.add(new KeyValuePair<String, Boolean>("video", video));
+            listOfProperties.add(new KeyValuePair<String, String>("poster", poster));
 
-        hashTable.add(listOfProperties);
+            hashTable.add(listOfProperties);
 
-        KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(release, listOfProperties); 
-        binarySearchTree.add(dateAndProperties);
+            KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(release, listOfProperties); 
+            binarySearchTree.add(dateAndProperties);
 
-        binarySearchTree.printNodesInOrder();
+            binarySearchTree.printNodesInOrder();
 
-        //hashTable.printFirstElementsOfEachRowInTable();
+            //hashTable.printFirstElementsOfEachRowInTable();
 
-        return false;
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+        
     }
 
     /**
@@ -107,7 +113,7 @@ public class Movies implements IMovies {
     @Override
     public int[] getAllIDsReleasedInRange(Calendar start, Calendar end) {
         // TODO Build this function
-        return new int[0];
+        return binarySearchTree.getIntPropertiesInRange(start, end, "id");
     }
 
     /**
