@@ -1,5 +1,6 @@
 package stores;
 
+import java.util.Arrays;
 import java.util.Calendar;
 
 import interfaces.IRatings;
@@ -34,9 +35,12 @@ public class Ratings implements IRatings {
             SimpleMap listOfProperties = new SimpleMap(17);
             listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
             listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+            listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
             
+            System.out.println("adding: " + ((Calendar) timestamp).getTime());
             KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
             binarySearchTree.add(dateAndProperties);
+            binarySearchTree.printNodesInOrder();
             return true;
           }
           catch(Exception e) {
@@ -75,8 +79,15 @@ public class Ratings implements IRatings {
      */
     @Override
     public boolean set(int userID, int movieID, float rating, Calendar timestamp) {
-        // TODO Build this function
-        return false;
+
+        SimpleMap listOfProperties = new SimpleMap(17);
+        listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
+        listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+        listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
+        
+        KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
+        binarySearchTree.add(dateAndProperties);
+        return true;
     }
 
     /**
@@ -91,8 +102,8 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getRatingsBetween(Calendar start, Calendar end) {
-        
-        return binarySearchTree.getIntPropertiesInRange(start, end, "id");
+        System.out.println("Final return val" + Arrays.toString(binarySearchTree.getFloatPropertiesInRange(start, end, "rating")));
+        return binarySearchTree.getFloatPropertiesInRange(start, end, "rating");
     }
 
     /**
