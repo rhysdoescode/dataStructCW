@@ -11,13 +11,17 @@ public class Ratings implements IRatings {
     private BinarySearchTree binarySearchTree;
     private HashTable userHashTable;
     private HashTable movieHashTable;
+    private SimpleArrayList users;
+    private SimpleArrayList movies;
     /**
      * The constructor for the Ratings data store. This is where you should
      * initialise your data structures.
      */
     public Ratings() {
-        HashTable userHashTable = new HashTable("userID");
-        HashTable movieHashTable = new HashTable("movieID");
+        this.userHashTable = new HashTable("userID");
+        this.movieHashTable = new HashTable("movieID");
+        this.users = new SimpleArrayList();
+        this.movies = new SimpleArrayList();
         this.binarySearchTree = new BinarySearchTree<>();
     }
 
@@ -34,23 +38,36 @@ public class Ratings implements IRatings {
      */
     @Override
     public boolean add(int userID, int movieID, float rating, Calendar timestamp) {
-        try {
-            SimpleMap listOfProperties = new SimpleMap(3);
-            listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
-            listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
-            listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
-            
-            System.out.println("adding: " + ((Calendar) timestamp).getTime());
-            KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
-            binarySearchTree.add(dateAndProperties);
-            userHashTable.add(listOfProperties);
-            movieHashTable.add(listOfProperties);
-            binarySearchTree.printNodesInOrder();
-            return true;
-          }
-          catch(Exception e) {
-            return false;
-          }
+      
+        SimpleMap listOfProperties = new SimpleMap(3);
+        listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
+        listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+        listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
+
+        KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
+        binarySearchTree.add(dateAndProperties);
+
+        users.add(userID);
+        movies.add(movieID);
+
+        SimpleMap userListOfProperties = new SimpleMap(3);
+        userListOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
+        userListOfProperties.add(new KeyValuePair<String, SimpleArrayList>("movies", movies));
+        userListOfProperties.add(new KeyValuePair<String, Float>("ratings", rating));
+
+        SimpleMap movieListOfProperties = new SimpleMap(3);
+        movieListOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+        movieListOfProperties.add(new KeyValuePair<String, SimpleArrayList>("users", users));
+        movieListOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
+        
+        System.out.println("adding: " + ((Calendar) timestamp).getTime());
+        
+        userHashTable.add(userListOfProperties);
+        movieHashTable.add(movieListOfProperties);
+        binarySearchTree.printNodesInOrder();
+        
+        return true;
+        
           
         
     }
@@ -85,15 +102,7 @@ public class Ratings implements IRatings {
     @Override
     public boolean set(int userID, int movieID, float rating, Calendar timestamp) {
 
-        SimpleMap listOfProperties = new SimpleMap(3);
-      
-        listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
-        listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
-       
-        listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
-        
-        KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
-        binarySearchTree.add(dateAndProperties);
+        add(userID, movieID, rating, timestamp);
 
         return true;
     }
@@ -156,8 +165,16 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getMovieRatings(int movieID) {
-        movieHashTable.getPropertyByID(movieID, "ratings");
-        return new float[0];
+        System.out.println("ooof");
+        float[] result = (float[]) userHashTable.getPropertyByID(movieID, "ratings", "movieID");
+        if (result == null){
+            float[] empty = {};
+            return empty;
+        }
+        else{
+            return result;
+        }
+        
     }
 
     /**
@@ -169,8 +186,14 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getUserRatings(int userID) {
-        // TODO Build this function
-        return new float[0];
+        float[] result = (float[]) userHashTable.getPropertyByID(userID, "ratings", "userID");
+        if (result == null){
+            float[] empty = {};
+            return empty;
+        }
+        else{
+            return result;
+        }
     }
 
     /**
@@ -182,8 +205,18 @@ public class Ratings implements IRatings {
      */
     @Override
     public float getMovieAverageRatings(int movieID) {
-        // TODO Build this function
-        return 0;
+        float[] array = getMovieRatings(movieID);
+
+        if (array.length > 0){
+            int total = 0;
+            for (int i = 0; i < array.length; i++){
+                total += array[i];
+            }
+            return total/array.length;
+        }
+        else{
+            return 0;
+        }
     }
 
     /**
@@ -195,8 +228,17 @@ public class Ratings implements IRatings {
      */
     @Override
     public float getUserAverageRatings(int userID) {
-        // TODO Build this function
-        return 0;
+        float[] array = getUserRatings(userID);
+        if (array.length > 0){
+            int total = 0;
+            for (int i = 0; i < array.length; i++){
+                total += array[i];
+            }
+            return total/array.length;
+        }
+        else{
+            return 0;
+        }
     }
 
     /**
@@ -234,7 +276,7 @@ public class Ratings implements IRatings {
      */
     @Override
     public int size() {
-        return 0;
+        return binarySearchTree.getSize();
     }
 
 }

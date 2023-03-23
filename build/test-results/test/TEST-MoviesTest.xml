@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoviesTest" tests="80" skipped="0" failures="15" errors="0" timestamp="2023-03-23T01:16:02" hostname="LAPTOP-BPGBSKDT" time="0.225">
+<testsuite name="MoviesTest" tests="80" skipped="0" failures="15" errors="0" timestamp="2023-03-23T05:25:09" hostname="LAPTOP-BPGBSKDT" time="0.279">
   <properties/>
   <testcase name="testAddProductionCompanyNeg()" classname="MoviesTest" time="0.024"/>
   <testcase name="testAddProductionCompanyPos()" classname="MoviesTest" time="0.005">
@@ -101,7 +101,7 @@
 </failure>
   </testcase>
   <testcase name="testAddProductionCountryNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testAddProductionCountryPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testAddProductionCountryPos()" classname="MoviesTest" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Adding a valid movie should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Adding a valid movie should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -300,13 +300,13 @@
   </testcase>
   <testcase name="testAdultPos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGenreNegID()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGenrePos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetAdultAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGenrePos()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetAdultAll()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetAdultNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetBudgetAll()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetBudgetNeg()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetBudgetPos()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetCollectionBackdropNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetBudgetNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetBudgetPos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetCollectionBackdropNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetCollectionBackdropPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionbackdrop&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionbackdrop&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
@@ -407,7 +407,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCollectionIDNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetCollectionIDPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testGetCollectionIDPos()" classname="MoviesTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect ID returned. ==&gt; expected: &lt;1&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect ID returned. ==&gt; expected: &lt;1&gt; but was: &lt;-1&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -507,7 +507,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCollectionNameNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetCollectionNamePos()" classname="MoviesTest" time="0.001">
+  <testcase name="testGetCollectionNamePos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Toy Story Series&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Toy Story Series&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -707,11 +707,11 @@
 </failure>
   </testcase>
   <testcase name="testGetGenreAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetHomepageAll()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetHomepageNeg()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetHomepageAll()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetHomepageNeg()" classname="MoviesTest" time="0.0"/>
   <testcase name="testGetHomepagePos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetIMDBNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetIMDBPos()" classname="MoviesTest" time="0.003">
+  <testcase name="testGetIMDBPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;IMDBid&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;IMDBid&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -810,23 +810,23 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetLanguagesMany()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetLanguagesNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetLanguagesPos()" classname="MoviesTest" time="0.005"/>
-  <testcase name="testGetOriginalLanguageAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetLanguagesMany()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetLanguagesNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetLanguagesPos()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetOriginalLanguageAll()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetOriginalLanguageNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetOriginalLanguagePos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetOriginalTitleAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetOriginalTitleAll()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetOriginalTitleNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetOriginalTitlePos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetOverviewAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetOriginalTitlePos()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetOverviewAll()" classname="MoviesTest" time="0.005"/>
   <testcase name="testGetOverviewNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetOverviewPos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetPosterAll()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetPosterNeg()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetPosterPos()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetPosterAll()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetPosterNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetPosterPos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetProductionCompanyNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetProductionCompanyPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testGetProductionCompanyPos()" classname="MoviesTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at MoviesTest.checkContentsOfArrayCompany(MoviesTest.java:468)
 	at MoviesTest.testGetProductionCompanyPos(MoviesTest.java:1375)
@@ -922,7 +922,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetProductionCountriesNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testGetProductionCountriesNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetProductionCountryPos()" classname="MoviesTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at MoviesTest.checkContentsOfArrayString(MoviesTest.java:450)
@@ -1020,29 +1020,29 @@
 </failure>
   </testcase>
   <testcase name="testGetReleaseAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetReleaseNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetReleaseNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetReleaseNegVal()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetReleasePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRevenueAll()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRevenueNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRevenuePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRuntimeAll()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRuntimeNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRuntimePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetStatusAll()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetStatusNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetRevenueAll()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetRevenueNeg()" classname="MoviesTest" time="0.007"/>
+  <testcase name="testGetRevenuePos()" classname="MoviesTest" time="0.005"/>
+  <testcase name="testGetRuntimeAll()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetRuntimeNeg()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetRuntimePos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetStatusAll()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetStatusNeg()" classname="MoviesTest" time="0.006"/>
   <testcase name="testGetStatusPos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetTaglineAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetTaglineAll()" classname="MoviesTest" time="0.003"/>
   <testcase name="testGetTaglineNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetTaglinePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetTitleAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetTaglinePos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetTitleAll()" classname="MoviesTest" time="0.006"/>
   <testcase name="testGetTitleNeg()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetTitlePos()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetTitlePos()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetVideoAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVideoNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetVideoNeg()" classname="MoviesTest" time="0.003"/>
   <testcase name="testGetVideoPos()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetVoteAverageNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVoteAveragePos()" classname="MoviesTest" time="0.003">
+  <testcase name="testGetVoteAveragePos()" classname="MoviesTest" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1.1&gt; but was: &lt;-1.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1.1&gt; but was: &lt;-1.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -1141,8 +1141,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetVoteCountNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVoteCountPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testGetVoteCountNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetVoteCountPos()" classname="MoviesTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1000&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1000&gt; but was: &lt;-1&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -1241,8 +1241,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testSetIMDBNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testSetIMDBPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testSetIMDBNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testSetIMDBPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -1340,8 +1340,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testSetVoteNeg()" classname="MoviesTest" time="0.0"/>
-  <testcase name="testSetVotePos()" classname="MoviesTest" time="0.002">
+  <testcase name="testSetVoteNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testSetVotePos()" classname="MoviesTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -1439,9 +1439,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testSize()" classname="MoviesTest" time="0.004"/>
-  <testcase name="testfindFilmsNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testfindFilmsPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testSize()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testfindFilmsNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testfindFilmsPos()" classname="MoviesTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Could not find a valid film. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Could not find a valid film. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -1548,6 +1548,9 @@ left child null
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Generating fake data
 root about to not be null
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1556,48 +1559,45 @@ left child null
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1605,21 +1605,17 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1628,24 +1624,19 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1655,11 +1646,21 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1670,28 +1671,23 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1703,31 +1699,25 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1740,34 +1730,27 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
-Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
@@ -1781,6 +1764,425 @@ Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
 Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Printing all nodes in tree: Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
+Right xhild null
+Left child!!! Thu Feb 03 00:00:00 GMT 2000
 
 Starting testAddProductionCompanyNeg...
 
@@ -1795,24 +2197,168 @@ Starting testAddToCollectionNeg...
 Starting testAddToCollectionPos...
 
 Starting testAdultPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGenreNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGenrePos...
 0
 0
-[Lstores.Genre;@2d25b1d3
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
+[Lstores.Genre;@3c2f6223
 
 Starting testGetAdultAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetAdultNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetBudgetAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetBudgetNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetBudgetPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 1
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetCollectionBackdropNeg...
 
@@ -1831,48 +2377,510 @@ Starting testGetCollectionPosterNeg...
 Starting testGetCollectionPosterPos...
 
 Starting testGetGenreAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetHomepageAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetHomepageNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetHomepagePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 http://homepage.com/homepage
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetIMDBNeg...
 
 Starting testGetIMDBPos...
 
 Starting testGetLanguagesMany
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetLanguagesNeg
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetLanguagesPos
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetOriginalLanguageAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetOriginalLanguageNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetOriginalLanguagePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetOriginalTitleAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetOriginalTitleNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetOriginalTitlePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetOverviewAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetOverviewNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetOverviewPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetPosterAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetPosterNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 null
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetPosterPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetProductionCompanyNeg...
 
@@ -1883,48 +2891,513 @@ Starting testGetProductionCountriesNeg...
 Starting testGetProductionCountryPos...
 
 Starting testGetReleaseAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetReleaseNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetReleaseNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetReleasePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetRevenueAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetRevenueNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetRevenuePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetRuntimeAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetRuntimeNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetRuntimePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetStatusAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetStatusNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetStatusPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetTaglineAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetTaglineNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetTaglinePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetTitleAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetTitleNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetTitlePos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetVideoAll...
+ooof
+ooof
+element to check valuestructures.SimpleMap@7e1ba34d
+ooof
+ooof
+element to check valuestructures.SimpleMap@212e9cf7
+ooof
+ooof
+element to check valuestructures.SimpleMap@5a7f1829
+ooof
+ooof
+element to check valuestructures.SimpleMap@1d86473f
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e248e09
+ooof
+ooof
+element to check valuestructures.SimpleMap@6b38741e
+ooof
+ooof
+element to check valuestructures.SimpleMap@49a49700
+ooof
+ooof
+element to check valuestructures.SimpleMap@66349eb4
+ooof
+ooof
+element to check valuestructures.SimpleMap@7cfa00bd
+ooof
+ooof
+element to check valuestructures.SimpleMap@54ca03b8
+ooof
+ooof
+element to check valuestructures.SimpleMap@39bb82b6
+ooof
+ooof
+element to check valuestructures.SimpleMap@7bb87a0b
+ooof
+ooof
+element to check valuestructures.SimpleMap@576b7229
+ooof
+ooof
+element to check valuestructures.SimpleMap@53b87cbf
+ooof
+ooof
+element to check valuestructures.SimpleMap@36f3fa4c
+ooof
+ooof
+element to check valuestructures.SimpleMap@ea3b6bb
+ooof
+ooof
+element to check valuestructures.SimpleMap@2d5777c
+ooof
+ooof
+element to check valuestructures.SimpleMap@1298be1d
+ooof
+ooof
+element to check valuestructures.SimpleMap@3b101798
+ooof
+ooof
+element to check valuestructures.SimpleMap@2815682f
 
 Starting testGetVideoNeg...
+ooof
+ooof
+element to check valuestructures.SimpleMap@6cb782a6
 
 Starting testGetVideoPos...
+ooof
+ooof
+element to check valuestructures.SimpleMap@3e6d2061
 
 Starting testGetVoteAverageNeg...
 

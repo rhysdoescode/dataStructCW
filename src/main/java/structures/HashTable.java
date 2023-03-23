@@ -103,22 +103,38 @@ public class HashTable {
         return value % capacity;
     }
 
-    public Object getPropertyByID(int id, String propertyTitle){
+    public Object getPropertyByID(int id, String propertyTitle, String id_name){
+        System.out.println("ooof");
         int hashCode = hash(id);
+        System.out.println("ooof");
         Object propertyValue = null;
         LinkedListElement<SimpleMap> elementToCheck = table[hashCode].getHead();
+        System.out.println("element to check value" + elementToCheck.getValue());
         
         while (elementToCheck != null){
             SimpleMap map = elementToCheck.getValue();
-            if((Integer) map.getPropertyByKey("id") == id){
+            if((Integer) map.getPropertyByKey(id_name) == id){
                 propertyValue = map.getPropertyByKey(propertyTitle);
                 break;
             }
             elementToCheck = elementToCheck.getNext();
         }
 
-        
         return propertyValue;
+        
+    }
+
+    public void setPropertyByID(int id, KeyValuePair property, String id_name){
+        int hashCode = hash(id);
+        LinkedListElement<SimpleMap> elementToCheck = table[hashCode].getHead();
+        
+        while (elementToCheck != null){
+            SimpleMap map = elementToCheck.getValue();
+            if((Integer) map.getPropertyByKey(id_name) == id){
+                map.setPropertyByKey((String) property.getKey(), property.getValue());
+            }
+            elementToCheck = elementToCheck.getNext();
+        }
         
     }
 

@@ -56,6 +56,26 @@ public class SimpleMap  {
         }
     }
 
+    public boolean setPropertyByKey(String key, Object value){
+        int indexOfProperty = -1;
+        for (int i = 0; i < size; i++){
+            if (map[i].getKey() == key){
+                indexOfProperty = i;
+                break;
+            }
+        }
+
+        if (indexOfProperty == -1){
+            return false;
+        }
+        else{
+            map[indexOfProperty].setValue(value);
+            return true;
+        }
+    }
+
+    
+
     public Calendar getKey() {
         return null;
     }

@@ -10,7 +10,7 @@ import java.util.Calendar;
  */
 public class BinarySearchTree <K extends Comparable<K>, V, X extends Number>  {
    BSTNode<K, SimpleMap> root;
-   int size;
+   private int size;
 
    public BinarySearchTree(){
       root = null;
@@ -226,13 +226,27 @@ public class BinarySearchTree <K extends Comparable<K>, V, X extends Number>  {
          if (root.getRightChild() == null){
             System.out.println("Right xhild null");
          }
+         else{
+            System.out.println("RIGHT CHILD!!! " + ((Calendar) root.getRightChild().getValue().getKey()).getTime());
+         }
          if (root.getLeftChild() == null){
             System.out.println("left child null");
          }
-         System.out.println("RIGHT CHILD!!! " + ((Calendar) root.getRightChild().getValue().getKey()).getTime());
-         System.out.println("Left child!!! " + ((Calendar) root.getRightChild().getValue().getKey()).getTime());
+         else{
+            System.out.println("Left child!!! " + ((Calendar) root.getLeftChild().getValue().getKey()).getTime());
+         }
+         
+         
       }
    }
 
+   /**
+    * Getter for how many items are in the tree
+    * @return how many nodes are in the tree
+    */
+   public int getSize(){
+      return size;
+
+   }
    
 }

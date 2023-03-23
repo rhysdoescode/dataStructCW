@@ -16,18 +16,30 @@ public class SimpleArrayList {
     * @param value Value to add to the array list
     */
    public void add(Object value){
-      if(size < capacity){
-         array[size] = value;
-         size++;
-      }
-      else{
-         Object[] newArray = new Object[capacity + 1];
+     
+      if(size == capacity){
+         Object[] newArray = new Object[capacity * 2];
          for (int i = 0; i < capacity; i++){
             newArray[i] = array[i];
          }
+         array = newArray;
+         capacity *= 2; 
       }
 
+      array[size] = value;
+      size++;
    }
+
+   /**
+    * Gets value at specified index
+    * @param index
+    * @return
+    */
+   public Object get(int index){
+      return array[index];
+   }
+
+  
    
    
 }

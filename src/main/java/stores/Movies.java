@@ -145,7 +145,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getTitle(int id) {
-        return (String) hashTable.getPropertyByID(id, "title");
+        return (String) hashTable.getPropertyByID(id, "title", "id");
     }
 
     /**
@@ -159,7 +159,7 @@ public class Movies implements IMovies {
     @Override
     public String getOriginalTitle(int id) {
         
-        return (String) hashTable.getPropertyByID(id, "originalTitle");
+        return (String) hashTable.getPropertyByID(id, "originalTitle", "id");
     }
 
     /**
@@ -171,7 +171,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getOverview(int id) {
-        return (String) hashTable.getPropertyByID(id, "overview");
+        return (String) hashTable.getPropertyByID(id, "overview", "id");
     }
 
     /**
@@ -183,7 +183,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getTagline(int id) {
-        return (String) hashTable.getPropertyByID(id, "tagline");
+        return (String) hashTable.getPropertyByID(id, "tagline", "id");
     }
 
     /**
@@ -195,7 +195,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getStatus(int id) {
-        return (String) hashTable.getPropertyByID(id, "status");
+        return (String) hashTable.getPropertyByID(id, "status", "id");
     }
 
     /**
@@ -207,7 +207,7 @@ public class Movies implements IMovies {
      */
     @Override
     public Genre[] getGenres(int id) {
-        return (Genre[]) hashTable.getPropertyByID(id, "genres");
+        return (Genre[]) hashTable.getPropertyByID(id, "genres", "id");
     }
 
     /**
@@ -219,7 +219,7 @@ public class Movies implements IMovies {
      */
     @Override
     public Calendar getRelease(int id) {
-        return (Calendar) hashTable.getPropertyByID(id, "release");
+        return (Calendar) hashTable.getPropertyByID(id, "release", "id");
     }
 
     /**
@@ -231,7 +231,7 @@ public class Movies implements IMovies {
      */
     @Override
     public long getBudget(int id) {
-        Object result = hashTable.getPropertyByID(id, "budget");
+        Object result = hashTable.getPropertyByID(id, "budget", "id");
 
         if (result == null){
             return -1;
@@ -251,7 +251,7 @@ public class Movies implements IMovies {
      */
     @Override
     public long getRevenue(int id) {
-        Object result = hashTable.getPropertyByID(id, "revenue");
+        Object result = hashTable.getPropertyByID(id, "revenue", "id");
 
         if (result == null){
             return -1;
@@ -270,7 +270,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String[] getLanguages(int id) {
-        return (String[]) hashTable.getPropertyByID(id, "languages");
+        return (String[]) hashTable.getPropertyByID(id, "languages", "id");
     }
 
     /**
@@ -283,7 +283,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getOriginalLanguage(int id) {
-        return (String) hashTable.getPropertyByID(id, "originalLanguage");
+        return (String) hashTable.getPropertyByID(id, "originalLanguage", "id");
     }
 
     /**
@@ -295,7 +295,7 @@ public class Movies implements IMovies {
      */
     @Override
     public double getRuntime(int id) {
-        Object result = hashTable.getPropertyByID(id, "runtime");
+        Object result = hashTable.getPropertyByID(id, "runtime", "id");
 
         if (result == null){
             return -1;
@@ -315,7 +315,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getHomepage(int id) {
-        return (String) hashTable.getPropertyByID(id, "homepage");
+        return (String) hashTable.getPropertyByID(id, "homepage", "id");
     }
 
     /**
@@ -328,7 +328,7 @@ public class Movies implements IMovies {
      */
     @Override
     public boolean getAdult(int id) {
-        Object result = hashTable.getPropertyByID(id, "adult");
+        Object result = hashTable.getPropertyByID(id, "adult", "id");
 
         if (result == null){
             return false;
@@ -348,7 +348,7 @@ public class Movies implements IMovies {
      */
     @Override
     public boolean getVideo(int id) {
-        Object result = hashTable.getPropertyByID(id, "video");
+        Object result = hashTable.getPropertyByID(id, "video", "id");
 
         if (result == null){
             return false;
@@ -367,7 +367,7 @@ public class Movies implements IMovies {
      */
     @Override
     public String getPoster(int id) {
-        return (String) hashTable.getPropertyByID(id, "poster");
+        return (String) hashTable.getPropertyByID(id, "poster", "id");
     }
 
     /**
