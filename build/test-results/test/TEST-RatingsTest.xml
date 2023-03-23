@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RatingsTest" tests="19" skipped="0" failures="12" errors="0" timestamp="2023-03-23T05:25:10" hostname="LAPTOP-BPGBSKDT" time="0.166">
+<testsuite name="RatingsTest" tests="19" skipped="0" failures="12" errors="0" timestamp="2023-03-23T05:29:07" hostname="LAPTOP-BPGBSKDT" time="0.108">
   <properties/>
   <testcase name="testGetMovieRatingsBetweenNeg()" classname="RatingsTest" time="0.002"/>
-  <testcase name="testGetMovieRatingsBetweenPos()" classname="RatingsTest" time="0.003">
+  <testcase name="testGetMovieRatingsBetweenPos()" classname="RatingsTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -103,8 +103,8 @@
 </failure>
   </testcase>
   <testcase name="testSize()" classname="RatingsTest" time="0.001"/>
-  <testcase name="testGetMostRatedUsersNeg()" classname="RatingsTest" time="0.003"/>
-  <testcase name="testGetMostRatedUsersPos()" classname="RatingsTest" time="0.003">
+  <testcase name="testGetMostRatedUsersNeg()" classname="RatingsTest" time="0.0"/>
+  <testcase name="testGetMostRatedUsersPos()" classname="RatingsTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -305,8 +305,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetRatingsBetweenNeg()" classname="RatingsTest" time="0.002"/>
-  <testcase name="testGetRatingsBetweenPos()" classname="RatingsTest" time="0.002">
+  <testcase name="testGetRatingsBetweenNeg()" classname="RatingsTest" time="0.003"/>
+  <testcase name="testGetRatingsBetweenPos()" classname="RatingsTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:134)
 	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
@@ -409,7 +409,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserRatingsNeg()" classname="RatingsTest" time="0.004">
+  <testcase name="testGetUserRatingsNeg()" classname="RatingsTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.HashTable.getPropertyByID(HashTable.java:111)
 	at stores.Ratings.getUserRatings(Ratings.java:189)
@@ -506,7 +506,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserRatingsPos()" classname="RatingsTest" time="0.001">
+  <testcase name="testGetUserRatingsPos()" classname="RatingsTest" time="0.008">
     <failure message="java.lang.ClassCastException: class java.lang.Float cannot be cast to class [F (java.lang.Float and [F are in module java.base of loader 'bootstrap')" type="java.lang.ClassCastException">java.lang.ClassCastException: class java.lang.Float cannot be cast to class [F (java.lang.Float and [F are in module java.base of loader 'bootstrap')
 	at stores.Ratings.getUserRatings(Ratings.java:189)
 	at RatingsTest.testGetUserRatingsPos(RatingsTest.java:163)
@@ -602,7 +602,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserAverageRatingsNeg()" classname="RatingsTest" time="0.002">
+  <testcase name="testGetUserAverageRatingsNeg()" classname="RatingsTest" time="0.004">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.HashTable.getPropertyByID(HashTable.java:111)
 	at stores.Ratings.getUserRatings(Ratings.java:189)
@@ -700,7 +700,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserAverageRatingsPos()" classname="RatingsTest" time="0.003">
+  <testcase name="testGetUserAverageRatingsPos()" classname="RatingsTest" time="0.001">
     <failure message="java.lang.ClassCastException: class java.lang.Float cannot be cast to class [F (java.lang.Float and [F are in module java.base of loader 'bootstrap')" type="java.lang.ClassCastException">java.lang.ClassCastException: class java.lang.Float cannot be cast to class [F (java.lang.Float and [F are in module java.base of loader 'bootstrap')
 	at stores.Ratings.getUserRatings(Ratings.java:189)
 	at stores.Ratings.getUserAverageRatings(Ratings.java:231)
@@ -895,7 +895,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetMovieAverageRatingsPos()" classname="RatingsTest" time="0.001">
+  <testcase name="testGetMovieAverageRatingsPos()" classname="RatingsTest" time="0.003">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.HashTable.getPropertyByID(HashTable.java:116)
 	at stores.Ratings.getMovieRatings(Ratings.java:169)
@@ -993,8 +993,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetUserRatingsBetweenNeg()" classname="RatingsTest" time="0.002"/>
-  <testcase name="testGetUserRatingsBetweenPos()" classname="RatingsTest" time="0.09"/>
+  <testcase name="testGetUserRatingsBetweenNeg()" classname="RatingsTest" time="0.004"/>
+  <testcase name="testGetUserRatingsBetweenPos()" classname="RatingsTest" time="0.056"/>
   <testcase name="testGetMovieRatingsNeg()" classname="RatingsTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.HashTable.getPropertyByID(HashTable.java:111)
@@ -1092,7 +1092,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetMovieRatingsPos()" classname="RatingsTest" time="0.037">
+  <testcase name="testGetMovieRatingsPos()" classname="RatingsTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at structures.HashTable.getPropertyByID(HashTable.java:116)
 	at stores.Ratings.getMovieRatings(Ratings.java:169)
@@ -1635,7 +1635,7 @@ ooof
 Starting testGetUserRatingsPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3a46d04a
+element to check valuestructures.SimpleMap@4a858cef
 
 Starting testGetUserAverageRatingsNeg...
 ooof
@@ -1644,7 +1644,7 @@ ooof
 Starting testGetUserAverageRatings Pos ...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3a46d04a
+element to check valuestructures.SimpleMap@4a858cef
 
 Starting testGetMovieAverageRatingsNeg...
 ooof
@@ -1655,7 +1655,7 @@ Starting testGetMovieAverageRatings Pos ...
 ooof
 ooof
 ooof
-element to check valuestructures.SimpleMap@48e843d4
+element to check valuestructures.SimpleMap@5e24e56f
 Current node: null
 Current node: null
 Current node: null
@@ -1706,7 +1706,7 @@ Starting testGetMovieRatingsPos...
 ooof
 ooof
 ooof
-element to check valuestructures.SimpleMap@48e843d4
+element to check valuestructures.SimpleMap@5e24e56f
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

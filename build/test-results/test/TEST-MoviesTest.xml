@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoviesTest" tests="80" skipped="0" failures="15" errors="0" timestamp="2023-03-23T05:25:09" hostname="LAPTOP-BPGBSKDT" time="0.279">
+<testsuite name="MoviesTest" tests="80" skipped="0" failures="15" errors="0" timestamp="2023-03-23T05:29:07" hostname="LAPTOP-BPGBSKDT" time="0.319">
   <properties/>
-  <testcase name="testAddProductionCompanyNeg()" classname="MoviesTest" time="0.024"/>
-  <testcase name="testAddProductionCompanyPos()" classname="MoviesTest" time="0.005">
+  <testcase name="testAddProductionCompanyNeg()" classname="MoviesTest" time="0.026"/>
+  <testcase name="testAddProductionCompanyPos()" classname="MoviesTest" time="0.016">
     <failure message="org.opentest4j.AssertionFailedError: Should return true if successfully added. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Should return true if successfully added. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -100,8 +100,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testAddProductionCountryNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testAddProductionCountryPos()" classname="MoviesTest" time="0.003">
+  <testcase name="testAddProductionCountryNeg()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testAddProductionCountryPos()" classname="MoviesTest" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: Adding a valid movie should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Adding a valid movie should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -200,7 +200,7 @@
 </failure>
   </testcase>
   <testcase name="testAddToCollectionNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testAddToCollectionPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testAddToCollectionPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: A valid add should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: A valid add should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -298,15 +298,15 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testAdultPos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGenreNegID()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testAdultPos()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGenreNegID()" classname="MoviesTest" time="0.003"/>
   <testcase name="testGenrePos()" classname="MoviesTest" time="0.004"/>
-  <testcase name="testGetAdultAll()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetAdultAll()" classname="MoviesTest" time="0.003"/>
   <testcase name="testGetAdultNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetBudgetAll()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetBudgetNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetBudgetPos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetCollectionBackdropNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetBudgetAll()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetBudgetNeg()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetBudgetPos()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetCollectionBackdropNeg()" classname="MoviesTest" time="0.017"/>
   <testcase name="testGetCollectionBackdropPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionbackdrop&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionbackdrop&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
@@ -407,7 +407,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCollectionIDNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetCollectionIDPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testGetCollectionIDPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect ID returned. ==&gt; expected: &lt;1&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect ID returned. ==&gt; expected: &lt;1&gt; but was: &lt;-1&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -506,7 +506,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetCollectionNameNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetCollectionNameNeg()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetCollectionNamePos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Toy Story Series&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;Toy Story Series&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
@@ -607,7 +607,7 @@
 </failure>
   </testcase>
   <testcase name="testGetCollectionPosterNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetCollectionPosterPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testGetCollectionPosterPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionposter&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;collectionposter&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -706,12 +706,12 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetGenreAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetHomepageAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetHomepageNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testGetGenreAll()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetHomepageAll()" classname="MoviesTest" time="0.006"/>
+  <testcase name="testGetHomepageNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetHomepagePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetIMDBNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetIMDBPos()" classname="MoviesTest" time="0.002">
+  <testcase name="testGetIMDBNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetIMDBPos()" classname="MoviesTest" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;IMDBid&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;IMDBid&gt; but was: &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -810,21 +810,21 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetLanguagesMany()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetLanguagesMany()" classname="MoviesTest" time="0.008"/>
   <testcase name="testGetLanguagesNeg()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetLanguagesPos()" classname="MoviesTest" time="0.004"/>
   <testcase name="testGetOriginalLanguageAll()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetOriginalLanguageNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetOriginalLanguagePos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetOriginalLanguagePos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetOriginalTitleAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetOriginalTitleNeg()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetOriginalTitleNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetOriginalTitlePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetOverviewAll()" classname="MoviesTest" time="0.005"/>
+  <testcase name="testGetOverviewAll()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetOverviewNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetOverviewPos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetPosterAll()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetPosterAll()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetPosterNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetPosterPos()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetPosterPos()" classname="MoviesTest" time="0.002"/>
   <testcase name="testGetProductionCompanyNeg()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetProductionCompanyPos()" classname="MoviesTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
@@ -923,7 +923,7 @@
 </failure>
   </testcase>
   <testcase name="testGetProductionCountriesNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetProductionCountryPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testGetProductionCountryPos()" classname="MoviesTest" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at MoviesTest.checkContentsOfArrayString(MoviesTest.java:450)
 	at MoviesTest.testGetProductionCountryPos(MoviesTest.java:1314)
@@ -1019,30 +1019,30 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testGetReleaseAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetReleaseNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetReleaseAll()" classname="MoviesTest" time="0.003"/>
+  <testcase name="testGetReleaseNeg()" classname="MoviesTest" time="0.004"/>
   <testcase name="testGetReleaseNegVal()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetReleasePos()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetRevenueAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetRevenueNeg()" classname="MoviesTest" time="0.007"/>
-  <testcase name="testGetRevenuePos()" classname="MoviesTest" time="0.005"/>
-  <testcase name="testGetRuntimeAll()" classname="MoviesTest" time="0.004"/>
-  <testcase name="testGetRuntimeNeg()" classname="MoviesTest" time="0.004"/>
-  <testcase name="testGetRuntimePos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetRevenueAll()" classname="MoviesTest" time="0.013"/>
+  <testcase name="testGetRevenueNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetRevenuePos()" classname="MoviesTest" time="0.01"/>
+  <testcase name="testGetRuntimeAll()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetRuntimeNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testGetRuntimePos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetStatusAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetStatusNeg()" classname="MoviesTest" time="0.006"/>
-  <testcase name="testGetStatusPos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetTaglineAll()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetTaglineNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetTaglinePos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetTitleAll()" classname="MoviesTest" time="0.006"/>
-  <testcase name="testGetTitleNeg()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetTitlePos()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetStatusNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetStatusPos()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testGetTaglineAll()" classname="MoviesTest" time="0.002"/>
+  <testcase name="testGetTaglineNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testGetTaglinePos()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetTitleAll()" classname="MoviesTest" time="0.008"/>
+  <testcase name="testGetTitleNeg()" classname="MoviesTest" time="0.004"/>
+  <testcase name="testGetTitlePos()" classname="MoviesTest" time="0.001"/>
   <testcase name="testGetVideoAll()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVideoNeg()" classname="MoviesTest" time="0.003"/>
-  <testcase name="testGetVideoPos()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVoteAverageNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testGetVoteAveragePos()" classname="MoviesTest" time="0.004">
+  <testcase name="testGetVideoNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetVideoPos()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetVoteAverageNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testGetVoteAveragePos()" classname="MoviesTest" time="0.005">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1.1&gt; but was: &lt;-1.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1.1&gt; but was: &lt;-1.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -1142,7 +1142,7 @@
 </failure>
   </testcase>
   <testcase name="testGetVoteCountNeg()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testGetVoteCountPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testGetVoteCountPos()" classname="MoviesTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1000&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Incorrect value returned. ==&gt; expected: &lt;1000&gt; but was: &lt;-1&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -1340,8 +1340,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="testSetVoteNeg()" classname="MoviesTest" time="0.002"/>
-  <testcase name="testSetVotePos()" classname="MoviesTest" time="0.001">
+  <testcase name="testSetVoteNeg()" classname="MoviesTest" time="0.0"/>
+  <testcase name="testSetVotePos()" classname="MoviesTest" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Setting a value for a valid ID should return true. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -1440,8 +1440,8 @@
 </failure>
   </testcase>
   <testcase name="testSize()" classname="MoviesTest" time="0.001"/>
-  <testcase name="testfindFilmsNeg()" classname="MoviesTest" time="0.0"/>
-  <testcase name="testfindFilmsPos()" classname="MoviesTest" time="0.001">
+  <testcase name="testfindFilmsNeg()" classname="MoviesTest" time="0.001"/>
+  <testcase name="testfindFilmsPos()" classname="MoviesTest" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: Could not find a valid film. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Could not find a valid film. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
@@ -2199,166 +2199,166 @@ Starting testAddToCollectionPos...
 Starting testAdultPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGenreNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGenrePos...
 0
 0
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
-[Lstores.Genre;@3c2f6223
+element to check valuestructures.SimpleMap@5ab82199
+[Lstores.Genre;@74d80b97
 
 Starting testGetAdultAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetAdultNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetBudgetAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetBudgetNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetBudgetPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 1
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetCollectionBackdropNeg...
 
@@ -2379,140 +2379,140 @@ Starting testGetCollectionPosterPos...
 Starting testGetGenreAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetHomepageAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetHomepageNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetHomepagePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 http://homepage.com/homepage
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetIMDBNeg...
 
@@ -2521,366 +2521,366 @@ Starting testGetIMDBPos...
 Starting testGetLanguagesMany
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetLanguagesNeg
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetLanguagesPos
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetOriginalLanguageAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetOriginalLanguageNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetOriginalLanguagePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetOriginalTitleAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetOriginalTitleNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetOriginalTitlePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetOverviewAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetOverviewNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetOverviewPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetPosterAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetPosterNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 null
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetPosterPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetProductionCompanyNeg...
 
@@ -2893,511 +2893,511 @@ Starting testGetProductionCountryPos...
 Starting testGetReleaseAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetReleaseNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetReleaseNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetReleasePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetRevenueAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetRevenueNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetRevenuePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetRuntimeAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetRuntimeNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetRuntimePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetStatusAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetStatusNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetStatusPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetTaglineAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetTaglineNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetTaglinePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetTitleAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetTitleNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetTitlePos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetVideoAll...
 ooof
 ooof
-element to check valuestructures.SimpleMap@7e1ba34d
+element to check valuestructures.SimpleMap@2bba776a
 ooof
 ooof
-element to check valuestructures.SimpleMap@212e9cf7
+element to check valuestructures.SimpleMap@678f2df9
 ooof
 ooof
-element to check valuestructures.SimpleMap@5a7f1829
+element to check valuestructures.SimpleMap@f2b6264
 ooof
 ooof
-element to check valuestructures.SimpleMap@1d86473f
+element to check valuestructures.SimpleMap@3b9b54a5
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e248e09
+element to check valuestructures.SimpleMap@43e2759b
 ooof
 ooof
-element to check valuestructures.SimpleMap@6b38741e
+element to check valuestructures.SimpleMap@5d1c78fb
 ooof
 ooof
-element to check valuestructures.SimpleMap@49a49700
+element to check valuestructures.SimpleMap@970097e
 ooof
 ooof
-element to check valuestructures.SimpleMap@66349eb4
+element to check valuestructures.SimpleMap@68af4a89
 ooof
 ooof
-element to check valuestructures.SimpleMap@7cfa00bd
+element to check valuestructures.SimpleMap@38b1b4aa
 ooof
 ooof
-element to check valuestructures.SimpleMap@54ca03b8
+element to check valuestructures.SimpleMap@6d4d8e7
 ooof
 ooof
-element to check valuestructures.SimpleMap@39bb82b6
+element to check valuestructures.SimpleMap@f661aba
 ooof
 ooof
-element to check valuestructures.SimpleMap@7bb87a0b
+element to check valuestructures.SimpleMap@1d0ff2dd
 ooof
 ooof
-element to check valuestructures.SimpleMap@576b7229
+element to check valuestructures.SimpleMap@282e0132
 ooof
 ooof
-element to check valuestructures.SimpleMap@53b87cbf
+element to check valuestructures.SimpleMap@89df730
 ooof
 ooof
-element to check valuestructures.SimpleMap@36f3fa4c
+element to check valuestructures.SimpleMap@37919f53
 ooof
 ooof
-element to check valuestructures.SimpleMap@ea3b6bb
+element to check valuestructures.SimpleMap@556a1a66
 ooof
 ooof
-element to check valuestructures.SimpleMap@2d5777c
+element to check valuestructures.SimpleMap@d15a668
 ooof
 ooof
-element to check valuestructures.SimpleMap@1298be1d
+element to check valuestructures.SimpleMap@6a56f48d
 ooof
 ooof
-element to check valuestructures.SimpleMap@3b101798
+element to check valuestructures.SimpleMap@51869593
 ooof
 ooof
-element to check valuestructures.SimpleMap@2815682f
+element to check valuestructures.SimpleMap@543a1cef
 
 Starting testGetVideoNeg...
 ooof
 ooof
-element to check valuestructures.SimpleMap@6cb782a6
+element to check valuestructures.SimpleMap@4ed3049a
 
 Starting testGetVideoPos...
 ooof
 ooof
-element to check valuestructures.SimpleMap@3e6d2061
+element to check valuestructures.SimpleMap@5ab82199
 
 Starting testGetVoteAverageNeg...
 

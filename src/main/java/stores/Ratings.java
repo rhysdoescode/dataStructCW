@@ -102,8 +102,12 @@ public class Ratings implements IRatings {
     @Override
     public boolean set(int userID, int movieID, float rating, Calendar timestamp) {
 
-        add(userID, movieID, rating, timestamp);
+        SimpleMap listOfProperties = new SimpleMap(3);
+        listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
+        listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+        listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
 
+       
         return true;
     }
 

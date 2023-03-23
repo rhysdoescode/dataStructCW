@@ -78,7 +78,6 @@ public class Movies implements IMovies {
 
             binarySearchTree.printNodesInOrder();
 
-            //hashTable.printFirstElementsOfEachRowInTable();
 
             return true;
         }
