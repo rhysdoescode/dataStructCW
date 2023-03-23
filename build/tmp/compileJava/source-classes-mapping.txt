@@ -2,10 +2,10 @@ structures/BinarySearchTree.java
  structures.BinarySearchTree
 stores/Crew.java
  stores.Crew
-structures/LinkedListElement.java
- structures.LinkedListElement
 stores/Company.java
  stores.Company
+structures/LinkedListElement.java
+ structures.LinkedListElement
 screen/RatingsScreen.java
  screen.MostRatedUsersRunnable
  screen.RatingsScreen
@@ -117,8 +117,6 @@ structures/LinkedList.java
  structures.LinkedList
 interfaces/ICompany.java
  interfaces.ICompany
-structures/HashTable.java
- structures.HashTable
 stores/Movies.java
  stores.Movies
 screen/CastDistances.java
@@ -127,6 +125,8 @@ screen/CastDistances.java
  screen.FindCastRunnable
  screen.FindCastRunnable$1
  screen.FindCastRunnable$1$1
+structures/HashTable.java
+ structures.HashTable
 stores/Ratings.java
  stores.Ratings
 utils/Constants.java

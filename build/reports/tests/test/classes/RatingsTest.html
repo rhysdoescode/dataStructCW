@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.133s</div>
+<div class="counter">0.189s</div>
 <p>duration</p>
 </div>
 </td>
@@ -486,6 +486,113 @@
 </span>
 </div>
 <div class="test">
+<a name="testGetRatingsBetweenPos()"></a>
+<h3 class="failures">testGetRatingsBetweenPos()</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:134)
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
+	at structures.BinarySearchTree.processGetFloatPropertiesInRange(BinarySearchTree.java:148)
+	at structures.BinarySearchTree.getFloatPropertiesInRange(BinarySearchTree.java:85)
+	at stores.Ratings.getRatingsBetween(Ratings.java:113)
+	at RatingsTest.testGetRatingsBetweenPos(RatingsTest.java:282)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+<div class="test">
 <a name="testGetTopMoviesPos()"></a>
 <h3 class="failures">testGetTopMoviesPos()</h3>
 <span class="code">
@@ -599,110 +706,6 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:102)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:754)
 	at RatingsTest.testGetUserAverageRatingsPos(RatingsTest.java:232)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testGetUserRatingsBetweenPos()"></a>
-<h3 class="failures">testGetUserRatingsBetweenPos()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: Incorrect values returned. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
-	at org.junit.jupiter.api.AssertArrayEquals.assertArraysHaveSameLength(AssertArrayEquals.java:423)
-	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:272)
-	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:114)
-	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1323)
-	at RatingsTest.testGetUserRatingsBetweenPos(RatingsTest.java:329)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1014,57 +1017,57 @@
 </thead>
 <tr>
 <td class="success">testGetMostRatedUsersNeg()</td>
-<td class="success">0.004s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">testGetMostRatedUsersPos()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testGetMovieAverageRatingsNeg()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">testGetMovieAverageRatingsPos()</td>
-<td class="failures">0.008s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testGetMovieRatingsBetweenNeg()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">testGetMovieRatingsBetweenPos()</td>
 <td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">testGetMovieRatingsNeg()</td>
-<td class="success">0.001s</td>
+<td class="success">testGetMovieAverageRatingsNeg()</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testGetMovieRatingsPos()</td>
-<td class="failures">0.010s</td>
+<td class="failures">testGetMovieAverageRatingsPos()</td>
+<td class="failures">0.005s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">testGetRatingsBetweenNeg()</td>
+<td class="success">testGetMovieRatingsBetweenNeg()</td>
 <td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testGetRatingsBetweenPos()</td>
-<td class="success">0.083s</td>
+<td class="failures">testGetMovieRatingsBetweenPos()</td>
+<td class="failures">0.008s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testGetMovieRatingsNeg()</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="failures">testGetMovieRatingsPos()</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testGetRatingsBetweenNeg()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testGetRatingsBetweenPos()</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="success">testGetTopMoviesNeg()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -1074,23 +1077,23 @@
 </tr>
 <tr>
 <td class="success">testGetUserAverageRatingsNeg()</td>
-<td class="success">0.003s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">testGetUserAverageRatingsPos()</td>
-<td class="failures">0.002s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testGetUserRatingsBetweenNeg()</td>
-<td class="success">0.003s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testGetUserRatingsBetweenPos()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">testGetUserRatingsBetweenPos()</td>
+<td class="success">0.133s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetUserRatingsNeg()</td>
@@ -1104,7 +1107,7 @@
 </tr>
 <tr>
 <td class="failures">testSize()</td>
-<td class="failures">0.004s</td>
+<td class="failures">0.002s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -1112,123 +1115,60 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>adding: Wed Feb 01 00:00:00 GMT 1989
+<pre>adding: Thu Feb 02 00:00:00 GMT 1989
 root about to not be null
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Right xhild null
-left child null
-adding: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Right xhild null
-adding: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Right xhild null
-adding: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Right xhild null
-adding: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Right xhild null
-adding: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Right xhild null
-adding: Wed Feb 02 00:00:00 GMT 2005
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 02 00:00:00 GMT 2005
-Right xhild null
-adding: Wed Feb 04 00:00:00 GMT 2009
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 02 00:00:00 GMT 2005
-Printing all nodes in tree: Wed Feb 04 00:00:00 GMT 2009
-Right xhild null
-adding: Wed Feb 05 00:00:00 GMT 2003
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Jan 31 00:00:00 GMT 2007
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Feb 06 00:00:00 GMT 2013
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Feb 06 00:00:00 GMT 2013
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Feb 06 00:00:00 GMT 2013
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Feb 06 00:00:00 GMT 2013
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
-adding: Wed Feb 06 00:00:00 GMT 2013
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1989
-Printing all nodes in tree: Wed Feb 06 00:00:00 GMT 1991
-Printing all nodes in tree: Wed Feb 03 00:00:00 GMT 1993
-Printing all nodes in tree: Wed Feb 01 00:00:00 GMT 1995
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 1997
-Printing all nodes in tree: Wed Jan 31 00:00:00 GMT 2001
-Printing all nodes in tree: Wed Feb 05 00:00:00 GMT 2003
-Right xhild null
+adding: Thu Feb 07 00:00:00 GMT 1991
+adding: Thu Feb 04 00:00:00 GMT 1993
+adding: Thu Feb 02 00:00:00 GMT 1995
+adding: Thu Feb 06 00:00:00 GMT 1997
+adding: Thu Feb 01 00:00:00 GMT 2001
+adding: Thu Feb 03 00:00:00 GMT 2005
+adding: Thu Feb 05 00:00:00 GMT 2009
+adding: Thu Feb 06 00:00:00 GMT 2003
+adding: Thu Feb 01 00:00:00 GMT 2007
+adding: Thu Feb 07 00:00:00 GMT 2013
+adding: Thu Feb 07 00:00:00 GMT 2013
+adding: Thu Feb 07 00:00:00 GMT 2013
+adding: Thu Feb 07 00:00:00 GMT 2013
+adding: Thu Feb 07 00:00:00 GMT 2013
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+movieID
+202
+202
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+movieID
+202
+201
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
 
 Starting testGetMostRatedUsers ...
 
@@ -1237,29 +1177,6 @@ Starting testGetMostRatedUsersPos...
 StartingGetTopMoviesUsers ...
 
 Starting testGetTopMoviesPos...
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-GET ABOVE NODE
 Current node: null
 Current node: null
 Current node: null
@@ -1268,95 +1185,6 @@ Current node: null
 Current node: null
 Current node: null
 Current node: null
-Final return val[]
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
- (Key: userID | Value: 102)  (Key: movieID | Value: 201)  (Key: rating | Value: 2.2) 
-Found node in range!
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Final return val[2.2]
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
- (Key: userID | Value: 102)  (Key: movieID | Value: 201)  (Key: rating | Value: 2.2) 
-Found node in range!
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-GET ABOVE NODE
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-Current node: null
-GET ABOVE NODE
-Current node: null
-Current node: null
-GET ABOVE NODE
 Current node: null
 Current node: null
 Current node: null
@@ -1377,6 +1205,46 @@ Starting testGetUserAverageRatings Pos ...
 Starting testGetMovieAverageRatingsNeg...
 
 Starting testGetMovieAverageRatings Pos ...
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+userID
+103
+102
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+userID
+103
+103
+ (Key: userID | Value: 103)  (Key: movieID | Value: 201)  (Key: rating | Value: 1.3) 
+Found node in range!
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
+Current node: null
 
 Starting testGetMovieRatingsNeg...
 
@@ -1392,7 +1260,7 @@ Starting testGetMovieRatingsPos...
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.0</a> at 22 Mar 2023, 23:06:54</p>
+<a href="http://www.gradle.org">Gradle 7.0</a> at 23 Mar 2023, 01:16:03</p>
 </div>
 </div>
 </body>

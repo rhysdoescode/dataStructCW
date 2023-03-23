@@ -9,12 +9,15 @@ import structures.*;
 public class Ratings implements IRatings {
 
     private BinarySearchTree binarySearchTree;
+    private HashTable userHashTable;
+    private HashTable movieHashTable;
     /**
      * The constructor for the Ratings data store. This is where you should
      * initialise your data structures.
      */
     public Ratings() {
-        HashTable hashTable = new HashTable();
+        HashTable userHashTable = new HashTable("userID");
+        HashTable movieHashTable = new HashTable("movieID");
         this.binarySearchTree = new BinarySearchTree<>();
     }
 
@@ -32,7 +35,7 @@ public class Ratings implements IRatings {
     @Override
     public boolean add(int userID, int movieID, float rating, Calendar timestamp) {
         try {
-            SimpleMap listOfProperties = new SimpleMap(17);
+            SimpleMap listOfProperties = new SimpleMap(3);
             listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
             listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
             listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
@@ -40,6 +43,8 @@ public class Ratings implements IRatings {
             System.out.println("adding: " + ((Calendar) timestamp).getTime());
             KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
             binarySearchTree.add(dateAndProperties);
+            userHashTable.add(listOfProperties);
+            movieHashTable.add(listOfProperties);
             binarySearchTree.printNodesInOrder();
             return true;
           }
@@ -80,13 +85,16 @@ public class Ratings implements IRatings {
     @Override
     public boolean set(int userID, int movieID, float rating, Calendar timestamp) {
 
-        SimpleMap listOfProperties = new SimpleMap(17);
+        SimpleMap listOfProperties = new SimpleMap(3);
+      
         listOfProperties.add(new KeyValuePair<String, Integer>("userID", userID));
         listOfProperties.add(new KeyValuePair<String, Integer>("movieID", movieID));
+       
         listOfProperties.add(new KeyValuePair<String, Float>("rating", rating));
         
         KeyValuePair<Calendar, SimpleMap> dateAndProperties = new KeyValuePair<Calendar,SimpleMap>(timestamp, listOfProperties); 
         binarySearchTree.add(dateAndProperties);
+
         return true;
     }
 
@@ -102,8 +110,7 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getRatingsBetween(Calendar start, Calendar end) {
-        System.out.println("Final return val" + Arrays.toString(binarySearchTree.getFloatPropertiesInRange(start, end, "rating")));
-        return binarySearchTree.getFloatPropertiesInRange(start, end, "rating");
+        return binarySearchTree.getFloatPropertiesInRange(start, end, "rating", null);
     }
 
     /**
@@ -119,8 +126,8 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getMovieRatingsBetween(int movieID, Calendar start, Calendar end) {
-        // TODO Build this function
-        return new float[0];
+        KeyValuePair<String, Integer> moviePair = new KeyValuePair<String, Integer>("movieID", movieID);
+        return binarySearchTree.getFloatPropertiesInRange(start, end, "rating", moviePair);
     }
 
     /**
@@ -136,8 +143,8 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getUserRatingsBetween(int userID, Calendar start, Calendar end) {
-        // TODO Build this function
-        return new float[0];
+        KeyValuePair<String, Integer> userPair = new KeyValuePair<String, Integer>("userID", userID);
+        return binarySearchTree.getFloatPropertiesInRange(start, end, "rating", userPair);
     }
 
     /**
@@ -149,7 +156,7 @@ public class Ratings implements IRatings {
      */
     @Override
     public float[] getMovieRatings(int movieID) {
-        // TODO Build this function
+        movieHashTable.getPropertyByID(movieID, "ratings");
         return new float[0];
     }
 

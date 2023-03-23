@@ -56,6 +56,10 @@ public class SimpleMap  {
         }
     }
 
+    public Calendar getKey() {
+        return null;
+    }
+
 
     
     

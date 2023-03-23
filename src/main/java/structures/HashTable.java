@@ -14,12 +14,14 @@ public class HashTable {
     private int bucketsFilled;
     private int capacity;
     private int size;
+    private String keyName;
 
 
-    public HashTable(){
+    public HashTable(String keyName){
         this.bucketsFilled = 0;
         this.size = 0;
         this.capacity = 2;
+        this.keyName = keyName;
         table = (LinkedList<SimpleMap>[]) new LinkedList[this.capacity];
     }
     
@@ -30,7 +32,7 @@ public class HashTable {
      * @param attributeList An array of key/value pairs of the movies attributes
      */
     public void add(SimpleMap attributeList) {
-        int hashCode = hash((Integer) attributeList.getPropertyByKey("id"));
+        int hashCode = hash((Integer) attributeList.getPropertyByKey(keyName));
         //System.out.println("Hash code: "+ hashCode);
         if (bucketsFilled > capacity * 0.7){
             growHashTable();

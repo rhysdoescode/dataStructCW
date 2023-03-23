@@ -16,7 +16,7 @@ public class Movies implements IMovies {
      * initialise your data structures.
      */
     public Movies() {
-        this.hashTable = new HashTable();
+        this.hashTable = new HashTable("id");
         this.binarySearchTree = new BinarySearchTree<>();
     }
 

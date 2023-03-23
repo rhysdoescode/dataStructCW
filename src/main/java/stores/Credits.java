@@ -12,7 +12,7 @@ public class Credits implements ICredits {
      * initialise your data structures.
      */
     public Credits() {
-        HashTable creditsHashTable = new HashTable();
+        HashTable creditsHashTable = new HashTable("id");
 
     }
 

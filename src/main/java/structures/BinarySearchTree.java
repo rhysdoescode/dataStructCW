@@ -81,8 +81,8 @@ public class BinarySearchTree <K extends Comparable<K>, V, X extends Number>  {
       return processGetIntPropertiesInRange((BSTNode<K, SimpleMap>) root, min, max, 0, propertyKey);
    }
 
-   public float[] getFloatPropertiesInRange(K min, K max, String propertyKey){
-      return processGetFloatPropertiesInRange(root, min, max, propertyKey);
+   public float[] getFloatPropertiesInRange(K min, K max, String propertyKey, KeyValuePair<K, V> target){
+      return processGetFloatPropertiesInRange(root, min, max, propertyKey, target);
    }
 
    private int[] processGetIntPropertiesInRange(BSTNode<K, SimpleMap> currentNode, K min, K max, int count, String propertyKey){
@@ -115,7 +115,7 @@ public class BinarySearchTree <K extends Comparable<K>, V, X extends Number>  {
     * @param propertyKey
     * @return
     */
-    public float[] processGetFloatPropertiesInRange(BSTNode<K, SimpleMap> currentNode, K min, K max, String propertyKey){
+    public float[] processGetFloatPropertiesInRange(BSTNode<K, SimpleMap> currentNode, K min, K max, String propertyKey, KeyValuePair<K, V> target){
       float[] array = new float[size];
 
       for (int i = 0; i < size; i++){
@@ -129,19 +129,28 @@ public class BinarySearchTree <K extends Comparable<K>, V, X extends Number>  {
 
       K currentNodeKey = currentNode.getValue().getKey();
 
-      if (currentNodeKey.compareTo(min) >= 0 && currentNodeKey.compareTo(max) <= 0){
-         System.out.println(currentNode.getValue().getValue().getPairs());
-         array[0] = (float) currentNode.getValue().getValue().getPropertyByKey(propertyKey);
-         System.out.println("Found node in range!");
-         float[][] floatArrays = {processGetFloatPropertiesInRange(currentNode.getLeftChild(), min, max, propertyKey),
-            processGetFloatPropertiesInRange(currentNode.getRightChild(), min, max, propertyKey), array};
-         return combineFloatArrays(floatArrays);
+      if (currentNodeKey.compareTo(min) > 0 && currentNodeKey.compareTo(max) < 0){
+         SimpleMap currentMap = currentNode.getValue().getValue();
+         System.out.println(target.getKey());
+         System.out.println((target.getValue()));
+         System.out.println(currentMap.getPropertyByKey((String) target.getKey()));
+
+         if (target == null || (target.getValue() == currentMap.getPropertyByKey((String) target.getKey()))){
+            System.out.println(currentNode.getValue().getValue().getPairs());
+            array[0] = (float) currentNode.getValue().getValue().getPropertyByKey(propertyKey);
+            System.out.println("Found node in range!");
+            float[][] floatArrays = {processGetFloatPropertiesInRange(currentNode.getLeftChild(), min, max, propertyKey, target),
+               processGetFloatPropertiesInRange(currentNode.getRightChild(), min, max, propertyKey, target), array};
+            return combineFloatArrays(floatArrays);
+         }
       }
-      else {
-         float[][] floatArrays = {processGetFloatPropertiesInRange(currentNode.getLeftChild(), min, max, propertyKey),
-            processGetFloatPropertiesInRange(currentNode.getRightChild(), min, max, propertyKey), array};
-         return combineFloatArrays(floatArrays);
-      }
+      
+         float[][] floatArrays = {processGetFloatPropertiesInRange(currentNode.getLeftChild(), min, max, propertyKey, target),
+            processGetFloatPropertiesInRange(currentNode.getRightChild(), min, max, propertyKey, target), array};
+            return combineFloatArrays(floatArrays);
+      
+      
+      
    }
 
    public int[] combineIntArrays(int[] arrayOne, int[] arrayTwo, int[] arrayThree){
